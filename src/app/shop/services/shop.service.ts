@@ -16,7 +16,7 @@ export class ShopService {
    * 获取门店分类列表
    */
   getShopTypeList(): Observable<ShopType[]> {
-    let url = 'mock-data/shop-type.json';
+    let url = 'https://link2019.herokuapp.com/visitors';//'mock-data/shop-type.json';
     return this.http.get(url)
       .map(res => res.json())
       .catch(error => Observable.throw(error || 'Server error'));
@@ -46,7 +46,7 @@ export class ShopService {
    * 获取商户门店列表
    */
   getMerchantList(): Observable<[Merchant]> {
-    let url = 'mock-data/merchant.json';
+    let url = 'https://link2019.herokuapp.com/counter';
     return this.http.get(url)
       .map(res => res.json())
       .catch(error => Observable.throw(error || 'Server error'));

@@ -5,4 +5,8 @@ export class ShopType {
   type_desc: string;
   ord: number;
   checked?: boolean;
+  clientId: string;
+  phoneNo: string;
+  dateTime: string;
+  url: string;
 }

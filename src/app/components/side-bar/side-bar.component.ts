@@ -19,7 +19,9 @@ export class SideBarComponent implements OnInit {
   ngOnInit() {
     this.sideBarService.getMenu().subscribe(res => {
       this.menu = res;
-    })
+      this.selectMenu(this.menu,0);
+    });
+   
   }
 
   selectMenu(menu: Menu, subIndex: number, tertiaryIndex?: number) {

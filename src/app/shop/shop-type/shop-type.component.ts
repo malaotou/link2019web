@@ -51,6 +51,7 @@ export class ShopTypeComponent implements OnInit {
   getShopTypeList() {
     this.loading = true;
     this.shopService.getShopTypeList().subscribe(res => {
+      console.log(res);
       this.loading = false;
       this.shopTypeList = res;
     });

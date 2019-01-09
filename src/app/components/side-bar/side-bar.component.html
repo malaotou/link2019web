@@ -10,7 +10,7 @@
           <li nz-menu-item *ngIf="!subItem?.subs" (click)="selectMenu(item, i)" >
             <a [routerLink]="[subItem.path]">{{ subItem?.title }}</a>
           </li>
-          <li nz-submenu *ngIf="subItem?.subs">
+          <li nz-submenu *ngIf="subItem?.subs" >
             <span title>
               {{ subItem?.title }}
             </span>
