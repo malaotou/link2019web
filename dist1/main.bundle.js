@@ -544,7 +544,6 @@ var SideBarComponent = (function () {
         var _this = this;
         this.sideBarService.getMenu().subscribe(function (res) {
             _this.menu = res;
-            _this.selectMenu(_this.menu, 0);
         });
     };
     SideBarComponent.prototype.selectMenu = function (menu, subIndex, tertiaryIndex) {
