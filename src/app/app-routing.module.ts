@@ -10,7 +10,7 @@ import { UserProfileComponent } from './user-profile/user-profile.component';
   imports: [
     RouterModule.forRoot([
       {
-        path: 'shop',
+        path: '',
         component: HomeComponent,
         canActivate: [AuthGuard]
       },
@@ -20,7 +20,7 @@ import { UserProfileComponent } from './user-profile/user-profile.component';
         canActivate: [AuthGuard]
       },
       {
-        path: '',
+        path: 'shop',
         loadChildren: 'app/shop/shop.module#ShopModule'
       },
       {

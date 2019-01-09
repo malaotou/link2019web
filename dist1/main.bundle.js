@@ -80,7 +80,7 @@ AppRoutingModule = __decorate([
         imports: [
             __WEBPACK_IMPORTED_MODULE_1__angular_router__["a" /* RouterModule */].forRoot([
                 {
-                    path: 'shop',
+                    path: '',
                     component: __WEBPACK_IMPORTED_MODULE_3__home_home_component__["a" /* HomeComponent */],
                     canActivate: [__WEBPACK_IMPORTED_MODULE_2__login_services_auth_guard_service__["a" /* AuthGuard */]]
                 },
@@ -90,7 +90,7 @@ AppRoutingModule = __decorate([
                     canActivate: [__WEBPACK_IMPORTED_MODULE_2__login_services_auth_guard_service__["a" /* AuthGuard */]]
                 },
                 {
-                    path: '',
+                    path: 'shop',
                     loadChildren: 'app/shop/shop.module#ShopModule'
                 },
                 {
